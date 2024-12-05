@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2vw;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    border-bottom: 0.1vw solid #006293;
+}
+
+main {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    color: white;
+    background-color: #006293;
+}
+
+
+/* ----------------------- CABECERA ----------------------- */
+
+header > div {
+    float: left;
+    width: 10%;
+    height: 90%;
+    margin: 0.5% 4.2%;
+}
+
+header img {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+nav {
+    width: 80%;
+    height: 100%;
+    float: right;
+    background-color: #006293;
+    color: white;
+}
+
+nav > a {
+    float: right;
+    margin: 5.5vh 8vw;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ----------------------- RESERVAS.HTML ----------------------- */
+section {
+    width: 50%;
+    margin: 6.75% auto;
+    padding: 0.5vh 0;
+    text-align: center;
+    border-radius: 1vw;
+    background-color: rgb(219, 219, 219);
+}
+
+form {
+    border: 0.1vw solid rgb(176, 176, 176);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    padding: 1vh;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+form h2 {
+    color: #006293;
+    font-size: 1.7em;
+    border-bottom: 0.1vw solid #006293;
+    width: max-content;
+    margin: 1vh auto 2.5vh;
+}
+
+form > article > input {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto 2vh;
+    padding: 1vh;
+    border-radius: 0.5vw;
+    border: 0.15vw solid #599ABA;
+}
+
+form > input {
+    display: block;
+    width: 50%;
+    margin: 0 auto 2vh;
+    padding: 1vh;
+    border-radius: 0.5vw;
+    border: 0.15vw solid #599ABA;
+}
+
+form > select {
+    width: 50%;
+    margin: 0 auto 2vh;
+    padding: 1vh;
+    border-radius: 0.5vw;
+    border: 0.15vw solid #599ABA;
+}
+
+
+form input[type="submit"] {
+    border: none;
+    background-color: #599ABA;
+    padding: 1.3vh;
+}
+
+form input[type="submit"]:hover {
+    border: none;
+    background-color: #417b98;
+    color: whitesmoke;
+    transition: .3s;
+}
+
+
+/* ----------------------- FOOTER ----------------------- */
+
+footer > div {
+    float: left;
+    width: 31%;
+    height: 15vh;
+    margin-top: 1.2%;
+    background-color: #006293;
+}
+
+.lineaFooter {
+    margin-right: 3.2%;
+    border-right: 0.1vw solid #417b9876;
+}
+
+footer h3 {
+    font-size: 1.4vw;
+    margin: 1vh;
+}
+
+footer div:nth-child(1) p {
+    margin: 0 3vw;
+}
+
+footer div:nth-child(2) ul {
+    list-style-type: none;
+}
+
+footer li {
+    float: left;
+    width: 45%;
+    text-align: center;
+    margin: 0.5vh 0;
+}
+
+footer div:nth-child(3) a {
+    display: block;
+    margin: 3.2vh 5vw;
+    text-decoration: none;
+    color: white;
+}
+
+@media (width <= 1024px) {
+    
+    header div{
+        height: 55%;
+        margin: 3% 1%;
+    }
+    
+    nav > a{
+        font-size: 2em;
+        margin: 5.8vh 8vw;
+    }
+    
+    main{
+        height: 64.3vh;
+    }
+    
+    section{
+        margin-top: 5%;
+    }
+    
+    form h2{
+        margin-top: 5%;
+        font-size: x-large;
+    }
+    
+    form > input, select{
+        padding: 2vw;
+        margin-bottom: 10%;
+        font-size: medium;
+    }
+    
+    footer{
+        height: 17vh;
+    }
+    
+    footer div, footer h3, footer p, footer a {
+        font-size: 1.4em;
+    }
+    
+    footer ul li{
+        font-size: 1.8em;
+    }
+    
+}
+
+/* ----------------------- INDEX.HTML ----------------------- */
+
+#reservasHtml section {
+    margin-top: 4.5%;
+}
+
+#reservasHtml form {
+    height: fit-content;
+}
+
+#reservasHtml form > article#radiobutton > div {
+    display: inline-block;
+    width: 45%;
+    margin: 1% auto;
+}
+
+#reservasHtml form input[type="file"] {
+    border: none;
+}
+
+/* ----------------------- LOGIN.HTML ----------------------- */
+
+#login{
+    width: 100%;
+    height: 57.9vh;
+}
+
+#login section {
+    width: 50%;
+    margin: 4% auto;
+    padding: 0.5vh 0;
+    text-align: center;
+    border-radius: 1vw;
+    background-color: rgb(219, 219, 219);
+}
+
+#login > section img{
+    width: 10%;
+    height: auto;
+    margin: 0.5vh 0;
+}
+
+#login form{
+    border: 0.1vw solid rgb(156, 156, 156);
+    width: 60%;
+    height: fit-content;
+    margin: 1vh auto 4vh;
+    padding: 1vw;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+#login form > input[type="email"], input[type="password"] {
+    width: 60%;
+    padding: 1vh 1vw;
+    margin: 0 auto;
+    border: 0.2vw solid #006293;
+    background-color: transparent;
+    
+}
+
+#login form >input[type="email"] {
+    margin-top: 2%;
+    border-bottom: none;
+    border-radius: 1vw 1vw 0 0;
+}
+
+#login form >input[type="password"] {
+    border-radius: 0 0 1vw 1vw;
+}
+
+#login form > input[type="email"]::placeholder, input[type="password"]::placeholder {
+    color: #006293;
+    font-weight: bold;
+}
+
+#login form > input[type="submit"] {
+    width: 60%;
+    margin: 3vh auto 0;
+    padding: 1.5vh 0;
+    border-radius: 1vw;
+    border: none;
+    background-color: #599ABA;
+    color : white;
+}
+/* MEDIA QUERIES LOGIN.HTML */
+@media (width <= 1024px) {
+    
+
+    #login section{
+        margin: 10% auto 0;
+    }
+
+    #login form {
+        height: 38vh;
+    }
+
+    #login form h2{
+        margin-top: 20%;
+        font-size: x-large;
+    }
+
+    #login form > input[type="email"]{
+        margin-top: 25%;
+    }
+
+    #login footer {
+        overflow: hidden;
+    }
+
+}
